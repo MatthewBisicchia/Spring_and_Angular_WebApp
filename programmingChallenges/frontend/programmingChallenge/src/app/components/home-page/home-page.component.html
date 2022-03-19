@@ -1,0 +1,44 @@
+<div id="homePage">
+
+    <div id="homePageMessage">
+        
+        <div id="box">
+            <div> Hover over each to learn more about the App, and click to Open it </div>
+        </div>
+    </div>
+
+    <div id="challengeModules">
+
+        <div class="module" [routerLink]="['', {outlets: {primary: ['idGenerator'], main: ['idGenerator']}}]" id="idGenerator" style="background-color: rgb(250, 244, 166);">
+            ID Generator 
+            
+            <div style="display: inline-block"> 
+                <img id="csvToAddressBookImage" src="../../../assets/csvToAddressBook.png">
+            </div>
+        </div>
+
+        <div class="module" [routerLink]="['', {outlets: {primary: ['phoneAndSSNFormatter'], main: ['phoneAndSSNFormatter']}}]" id="csvToAddressBook" style="background-color: rgb(198, 255, 175);">
+
+            CSV to Address Book
+
+            <div style="display: inline-block"> 
+                <img id="csvToAddressBookImage" src="../../../assets/csvToAddressBook.png">
+            </div>
+
+        </div>
+
+        <div class="module" [routerLink]="['', {outlets: {primary: ['phoneAndSSNFormatter'], main: ['phoneAndSSNFormatter']}}]" id="phoneAndSSNNumberFormatter" style="background-color: rgb(183, 210, 241);">
+            Phone Number Formatter
+
+            <br>
+            <br>
+
+            <div style="display: inline-block"> 
+                <img id="phoneImage" src="../../../assets/phone.png">
+                <img id="ssnImage" src="../../../assets/ssn.png">
+            </div>
+        </div>
+
+    </div>
+
+</div>

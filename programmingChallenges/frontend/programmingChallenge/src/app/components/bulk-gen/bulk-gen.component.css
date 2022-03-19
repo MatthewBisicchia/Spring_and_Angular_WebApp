@@ -1,0 +1,94 @@
+
+#generatorArea {
+    padding: 5px 40px 40px 40px;
+    width: auto;
+    height: auto;
+    font-family: 'Segoe UI';
+    align-items: center;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    background-color:rgb(179, 234, 241);
+    margin: 30px 300px 100px 300px;
+    border: 1px solid rgb(65, 61, 61);
+    box-shadow: 10px 10px 10px rgb(177, 168, 168);
+}
+
+#inputCaption {
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: bold;
+    margin-top: 20px; 
+    margin-bottom: 30px; 
+}
+
+.textInputBox {
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 400px; 
+}
+
+
+#addEntryButton {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px; 
+    width: 200px;
+    height: 30px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+#addEntryButton:hover {
+    color: green;
+    transition: 0.5s;
+}
+
+
+
+#generateIdButton {
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 3px solid black;
+    width: 200px;
+    height: 30px;
+    background-color: rgb(250, 186, 67);
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 2px rgb(177, 168, 168);
+    cursor: pointer;
+    user-select: none;
+    
+}
+
+#generateIdButton:hover{
+    background-color: rgb(252, 165, 4);
+    /* border: 5px solid black; */
+    transition: 0.30s;
+    box-shadow: 0 0 0 2px #000000;    
+}
+
+#generateIdButtonContainer {
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#addEntryButtonContainer {
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+

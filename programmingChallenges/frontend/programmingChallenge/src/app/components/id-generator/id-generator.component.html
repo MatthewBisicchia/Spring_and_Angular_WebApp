@@ -1,0 +1,27 @@
+<div id="idGeneratorTitle">
+    ID Generator
+</div>
+
+<hr>
+
+<div id="buttons">
+
+    <div id="quickGenButton" (click)="selectComponent('QuickGenComponent')" class="button">
+        QuickGen
+    </div>
+
+    <div id="bulkGenButton" (click)="selectComponent('BulkGenComponent')" class="button">
+        BulkGen
+    </div>
+    
+    <div id="myIdsButton"  (click)="getIDs()" class="button">
+        My IDs
+    </div>
+    
+
+</div>
+
+
+<div>
+    <ng-container *ngComponentOutlet="selectedComponent"></ng-container>
+</div>

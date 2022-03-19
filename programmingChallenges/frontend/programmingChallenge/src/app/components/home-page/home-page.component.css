@@ -1,0 +1,87 @@
+#homePage {
+
+    background-color: rgb(224, 220, 220);
+    height: 100vh;
+}
+
+#homePageMessage {
+    padding: 30px;
+    font-size: 24px; 
+    font-family: 'Segoe UI';
+}
+
+#box {
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    text-align: center;
+    border: 2px solid black;
+    box-shadow: 10px 10px 10px rgb(116, 109, 109);
+}
+
+#box:hover {
+    background-color: rgb(159, 236, 145);
+    background: rgb(245, 250, 177);
+    transition: 1s;
+}
+
+#challengeModules {
+
+    width: 100%;
+    padding: 10px 0;
+ 
+    display: flex; 
+    justify-content: center;
+  
+    align-items: center;
+}
+
+.module{
+    user-select: none;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Segoe UI';
+    border: 10px solid black;
+    border-radius: 30px;
+    display: inline-block;
+    margin: 40px;
+    box-shadow: 10px 10px 10px grey;
+}
+
+.module:hover {
+    transition: 1s;
+    border: 25px solid black;
+    cursor: pointer;
+}
+
+#csvToAddressBookImage {
+    width: 200px;
+    height: auto;
+}
+
+/* #csvToAddressBook:hover {
+    background-color: rgb(89, 206, 43);
+} */
+
+#phoneImage {
+    width: 100px; 
+    height: auto;
+}
+
+#ssnImage {
+    width: 100px; 
+    height: auto;
+}
+
+/* #phoneAndSSNNumberFormatter :hover {
+    transition: 0.5s;
+    background-color: rgb(43, 140, 250);
+} */
+
