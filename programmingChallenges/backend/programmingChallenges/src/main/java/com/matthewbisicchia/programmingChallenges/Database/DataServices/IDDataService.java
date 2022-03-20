@@ -32,13 +32,9 @@ public class IDDataService
 		{
 	    	return idRepository.save(IDGenerator.generateID(name, this));
 		}
-		catch(IllegalArgumentException e)
-		{
-			return new ID("INVALID ID - Reached Maximum Number of IDs for first three letters " + name.substring(0, 3));
-		}
 		catch(Exception e)
 		{
-			return new ID("INVALID ID");
+			return new ID(e.getMessage());
 		}
 	}	
 	
