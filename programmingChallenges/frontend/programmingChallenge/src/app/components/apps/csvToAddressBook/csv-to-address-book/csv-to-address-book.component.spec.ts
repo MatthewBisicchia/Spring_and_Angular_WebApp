@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FrontPageComponent } from './front-page.component';
+import { CsvToAddressBookComponent } from './csv-to-address-book.component';
 
-describe('FrontPageComponent', () => {
-  let component: FrontPageComponent;
-  let fixture: ComponentFixture<FrontPageComponent>;
+describe('CsvToAddressBookComponent', () => {
+  let component: CsvToAddressBookComponent;
+  let fixture: ComponentFixture<CsvToAddressBookComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FrontPageComponent ]
+      declarations: [ CsvToAddressBookComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FrontPageComponent);
+    fixture = TestBed.createComponent(CsvToAddressBookComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

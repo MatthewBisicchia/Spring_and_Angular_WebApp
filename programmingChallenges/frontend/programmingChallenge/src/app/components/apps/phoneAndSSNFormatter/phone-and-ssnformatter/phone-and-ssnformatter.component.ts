@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TerminalComponent } from '../terminal/terminal.component';
-import { BulkGenComponent } from '../../bulk-gen/bulk-gen.component';
+import { PhoneNumbersDirectoryComponent } from '../phone-numbers-directory/phone-numbers-directory.component';
 
 @Component({
   selector: 'app-phone-and-ssnformatter',
@@ -22,9 +22,9 @@ export class PhoneAndSSNFormatterComponent implements OnInit {
     {
       this.selectedComponent = TerminalComponent;
     }
-    else if (component === "BulkGenComponent")
+    else if (component == "PhoneNumbersDirectoryComponent")
     {
-      this.selectedComponent = BulkGenComponent;
+      this.selectedComponent = PhoneNumbersDirectoryComponent;
     }
 
   }

@@ -35,9 +35,8 @@ export class IDAPIService {
 
     public async generateID(name: String)
     {
-        const response = await lastValueFrom(this.httpClient.post<ID>(`${this.apiURL}/ID/generateID/{${name}}`, '')); 
-      
-        this.generatedId = response;
+        const response = await lastValueFrom(this.httpClient.post<ID>(`${this.apiURL}/ID/generateID/{${name}}`, ''));
+        this.generatedId = response;       
     }
 
 

@@ -39,12 +39,19 @@
     margin-right: 10px;
 }
 
+#commandLine{
+
+    display: flex;
+}
+
 #inputCommand
 {
+    display: inline-block;
     width: 490px;
     text-align: left;
     font-size: 20px;
     color: white;
     font-family: 'Segoe UI';
     background-color:rgb(44, 38, 38);
+    border: none;
 }

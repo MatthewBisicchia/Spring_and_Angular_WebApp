@@ -1,0 +1,24 @@
+<div id="idGeneratorTitle">
+    Phone and SSN Formatter
+</div>
+
+<hr>
+
+<div id="buttons">
+
+    <div id="quickGenButton" (click)="selectComponent('TerminalComponent')" class="button">
+        Terminal
+    </div>
+    
+</div>
+
+<div id="about">
+    This app formats phone numbers and social security numbers. If you would like to format a phone number, write 1 in the terminal, press the Enter key on your keyboard, 
+    and then the formatted phone number will show on the right in the output window. If you would like to format an SSN, write 2 in the terminal, press the Enter key, and the formatted SSN will
+    show on the right. 
+</div>
+
+
+<div>
+    <ng-container *ngComponentOutlet="selectedComponent"></ng-container>
+</div>

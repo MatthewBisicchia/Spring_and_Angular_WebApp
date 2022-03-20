@@ -18,11 +18,17 @@ export class QuickGenComponent implements OnInit {
 
   public async generateID()
   {    
-    let element = this.document.getElementById('textInputBox');
+    let textInputBox = this.document.getElementById('textInputBox');
+    let caption = this.document.getElementById('inputCaption');
 
-    if(element != null)
+    if(textInputBox != null && caption != null)
     {
-      const name = (<HTMLInputElement>element).value;
+      const name = (<HTMLInputElement>textInputBox).value;
+
+     
+      caption.innerHTML = "Generating ID . . . ";
+      caption.style.color = 'red';
+
       await this.idAPIService.generateID(name);
     
       this.switchToResultComponent();

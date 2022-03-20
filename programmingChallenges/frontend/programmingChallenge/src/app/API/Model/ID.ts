@@ -1,6 +1,5 @@
-export interface ID {
-    
+export interface ID 
+{    
     objectId: number;
     id: String;
-
 }
