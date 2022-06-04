@@ -82,27 +82,15 @@ public class IDGenerator
 	// Utility Method
 	private static boolean checkIfInvalid(String input)
 	{
-		String[] splicedInput = input.split("");
-		
-		boolean invalidInput = false;
-		boolean checking = true;
-		
-		for(int i = 0; checking && i < splicedInput.length; i++)
+		boolean valid = true;
+
+		if (input.matches("^[a-zA-Z]*$"))
 		{
-			if(!splicedInput[i].equals("A") && !splicedInput[i].equals("B") && !splicedInput[i].equals("C") && !splicedInput[i].equals("D") && !splicedInput[i].equals("E") &&
-					!splicedInput[i].equals("F") && !splicedInput[i].equals("G") && !splicedInput[i].equals("H") && !splicedInput[i].equals("I") && !splicedInput[i].equals("J") &&
-						!splicedInput[i].equals("K") && !splicedInput[i].equals("L") && !splicedInput[i].equals("M") && !splicedInput[i].equals("N") && !splicedInput[i].equals("O") &&
-							!splicedInput[i].equals("P") && !splicedInput[i].equals("Q") && !splicedInput[i].equals("R") && !splicedInput[i].equals("S") && !splicedInput[i].equals("T") &&
-								!splicedInput[i].equals("U") && !splicedInput[i].equals("V") && !splicedInput[i].equals("W") && !splicedInput[i].equals("X") && !splicedInput[i].equals("Y") &&
-										!splicedInput[i].equals("Z"))
-			{
-				checking = false;
-				invalidInput = true;				
-			}			
-		
+			valid = false; 
 		}
-		
-		return invalidInput;
+
+		return valid;
+
 	}
 	
 	
